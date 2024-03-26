@@ -14,8 +14,8 @@ public:
         // Only if the key is unique
         if (!contains(key))
         {   
-        // forward_list will automatically take care of collisions
-        hash_table[bucket].push_front(key);
+            // forward_list will automatically take care of collisions
+            hash_table[bucket].push_front(key);
         }
         
     }
