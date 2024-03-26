@@ -1,5 +1,3 @@
-// Link: https://leetcode.com/explore/learn/card/hash-table/182/practical-applications/1139/
-
 #include <forward_list>
 #include <algorithm>
 
@@ -38,7 +36,7 @@ public:
         // Find key in the particular bucket
         auto it = std::find(hash_table[bucket].begin(), hash_table[bucket].end(), key);
         
-        if (it != hash_table[1000].end())
+        if (it != hash_table[bucket].end())
         {
             return true; 
         }
